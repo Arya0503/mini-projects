@@ -1,2 +1,2 @@
-# Hello World Task
-This is my first web development task, displaying "Hello World!" on the screen.
+# Laundry Wallah / Laundry Mart Webpage
+This is my second HTML task. It is a basic webpage for a laundry service featuring images, an unordered list for services, a pricing table, and a functional contact form.
