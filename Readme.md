@@ -1,2 +1,2 @@
-# Hello World Task
-This is my first web development task, displaying "Hello World!" on the screen.
+# CSS Selectors Task
+This project demonstrates the use of various CSS selectors, including element selectors, class selectors, ID selectors, and structural pseudo-classes (`:first-child`, `:nth-child`) to target elements without adding extra classes.
