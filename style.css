@@ -1,0 +1,108 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.navbar {
+    height: 12vh;
+    width: 100vw;
+    padding: 4vh 8vw;
+    text-align: center; /* Centers the inline nav-links */
+}
+
+.logo {
+    float: left;
+    color: #4a5568;
+    font-size: 1.8vw;
+    display: inline;
+}
+
+.nav-links {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #a0aec0;
+    margin: 0 1.5vw;
+    font-size: 1.1vw;
+}
+
+.user-profile {
+    float: right;
+    display: inline;
+}
+
+.username {
+    background-color: #e6f7ff;
+    color: #00a8ff;
+    padding: 1.5vh 2vw;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.hero-section {
+    height: 88vh; /* Total 100vh - 12vh from navbar */
+    width: 100vw;
+    padding: 10vh 8vw;
+}
+
+.hero-left {
+    width: 45vw;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5vh;
+}
+
+.hero-left h1 {
+    font-size: 3.5vw;
+    color: #4a5568;
+    line-height: 1.2;
+    margin-bottom: 3vh;
+}
+
+.hero-left h1 span {
+    color: #00a8ff; /* Bright blue for emphasis */
+}
+
+.hero-left p {
+    font-size: 1.1vw;
+    color: #a0aec0;
+    line-height: 1.5;
+    margin-bottom: 4vh;
+    width: 35vw;
+}
+
+.hero-left button {
+    background-color: #00a8ff;
+    color: white;
+    border: none;
+    padding: 2vh 2.5vw;
+    font-size: 1.2vw;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero-right {
+    width: 35vw;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.hero-right img {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+}
