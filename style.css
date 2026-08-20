@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* --- Navbar Styling --- */
+.navbar {
+    padding: 20px;
+    display: block;
+}
+
+.logo {
+    float: left;
+    color: #4a5568;
+    font-size: 24px;
+}
+
+.right-nav {
+    float: right;
+    display: block;
+}
+
+.username {
+    background-color: #e6f7ff;
+    color: #00a8ff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* --- 1. Hamburger Button (Hidden by default) --- */
+.hamburger-btn {
+    display: none; /* Hidden on desktop view */
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+/* --- 2. Menu List (Hidden by default, Absolute Positioned) --- */
+.menu-list {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+    padding-top: 100px;
+}
+
+.menu-list a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* --- 3. THE CSS HACK --- */
+/* When hamburger is clicked (focused), show the sibling menu list */
+.hamburger-btn:focus ~ .menu-list {
+    display: block;
+}
+
+/* --- Mobile View Media Query --- */
+@media (max-width: 768px) {
+    /* Show the hamburger icon only on mobile */
+    .hamburger-btn {
+        display: inline-block;
+    }
+}
+
+/* --- Hero Section Styling (To match the screenshot) --- */
+.hero-section {
+    clear: both;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 28px;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #00a8ff;
+}
+
+.hero-section p {
+    color: #a0aec0;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.book-btn {
+    background-color: #00a8ff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.hero-img {
+    width: 80%;
+    max-width: 300px;
+}

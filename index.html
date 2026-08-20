@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Task</title>
+    <title>Laundry Services - Mobile Menu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <h2 class="logo">Logo</h2>
+
+        <div class="right-nav">
+            <span class="username">Aryavart</span>
+            
+            <!-- 1. The Hamburger Button (Element B) -->
+            <button class="hamburger-btn">☰</button>
+            
+            <!-- 2. The Menu List (Element A) - MUST be a sibling to the button -->
+            <div class="menu-list">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Simplified Hero Section for Mobile View -->
+    <div class="hero-section">
+        <h1>Revitalize Your<br>Clothes with Expert<br><span class="highlight">Laundry Services!</span></h1>
+        <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+        <button class="book-btn">Book a service today!</button>
+        
+        <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?q=80&w=500&auto=format&fit=crop" alt="Laundry Machine" class="hero-img">
+    </div>
+
 </body>
 </html>
