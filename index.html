@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Task</title>
+    <title>Student Records Filter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+
+    <header>
+        <h2>Hi, Aryavart</h2>
+        <button class="login-btn">Login</button>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search Student">
+            <button class="search-btn">Search</button>
+        </div>
+
+        <!-- This div is empty because JS will populate it! -->
+        <div class="cards-container" id="cardsContainer"></div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

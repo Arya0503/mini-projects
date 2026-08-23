@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.login-btn {
+    padding: 8px 20px;
+    border: 1px solid #007bff;
+    color: #007bff;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#searchInput {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-btn {
+    padding: 12px 24px;
+    background-color: #6f42c1; /* Purple to match the video */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid #eaeaea;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.card p {
+    margin: 8px 0;
+    color: #666;
+    font-size: 14px;
+}
