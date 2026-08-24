@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Task</title>
+    <title>Laundry Services Booking</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <h2>Logo</h2>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="nav-right">
+            <span class="username">Aryavart</span>
+            <button class="logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Main Content Grid -->
+    <main class="container">
+        
+        <!-- Left Section: Cart and Form -->
+        <div class="left-section">
+            <div class="cart-card">
+                <h3>Added Items</h3>
+                <div id="emptyCart" class="empty-cart">
+                    <p>ⓘ No Items Added</p>
+                </div>
+                <ul id="cartList" class="cart-list"></ul>
+                <div class="total-section">
+                    <strong>Total Amount</strong>
+                    <strong id="totalAmount">₹ 0</strong>
+                </div>
+            </div>
+
+            <div class="booking-card">
+                <h3>Book Now</h3>
+                <form id="bookingForm">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                    
+                    <div class="form-row">
+                        <div>
+                            <label>Email ID</label>
+                            <input type="email" placeholder="mail@gmail.com" required>
+                        </div>
+                        <div>
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="9876543210" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="book-btn">Book now</button>
+                    <p id="successMsg" class="hidden success-text">Thank you for contacting, we will get back to you soon.</p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Right Section: Service Browser -->
+        <div class="right-section">
+            <div class="browse-header">
+                <h2>Browse Our Services</h2>
+                <p>Click on the add to cart button to add the services to your cart or press skip.</p>
+            </div>
+
+            <div class="service-card" id="serviceCard">
+                <img id="serviceImg" src="" alt="Service Image">
+                <div class="service-info">
+                    <h3 id="serviceName">Service Name</h3>
+                    <h3 id="servicePrice" class="price-tag">₹0.00</h3>
+                </div>
+                <div class="service-actions">
+                    <button id="skipBtn" class="skip-btn">Skip Item ⊖</button>
+                    <button id="addBtn" class="add-btn">Add Item ⊕</button>
+                </div>
+            </div>
+            
+            <div id="endMessage" class="hidden">
+                <h3>No more services to show!</h3>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
