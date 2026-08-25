@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #f4f7f6; 
+}
+
+.login-container {
+    display: flex; 
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    max-width: 95%;
+    overflow: hidden;
+}
+
+.left-section {
+    flex: 1; 
+    background-color: #00a8ff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.left-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.right-section {
+    flex: 1; 
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-header h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-header p {
+    color: #666;
+    font-size: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-group input {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fafafa;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #00a8ff;
+}
+
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.forgot-password a {
+    color: #555;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #00a8ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #008be6;
+}
+
+.register-link {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.register-link a {
+    color: #00a8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
