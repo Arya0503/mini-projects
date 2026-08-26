@@ -3,9 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Task</title>
+    <title>Laundry Services Web App</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Replace with your actual EmailJS Public Key
+            emailjs.init("RHlehMJdkT_QVHQmb");
+        })();
+    </script>
 </head>
 <body>
-    <h1>Hello World!</h1>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2 class="logo">Logo</h2>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="user-profile">Username</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Revitalize Your<br>Clothes with Expert<br><span class="highlight">Laundry Services!</span></h1>
+            <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+            <button id="scrollToBooking" class="primary-btn">Book a service today!</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=500" alt="Laundry Machine">
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <h2>Our Achievements</h2>
+        <div class="stats">
+            <div><strong>15+</strong><br><small>Laundry Services</small></div>
+            <div><strong>240+</strong><br><small>Happy Customers</small></div>
+            <div><strong>2+ Yrs</strong><br><small>Experience</small></div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking-section" class="booking-section">
+        <!-- Left: Available Services -->
+        <div class="services-list">
+            <h2>Our Services</h2>
+            <p>Click On the Add To Cart Button To Add The Services To Your Cart</p>
+            
+            <div class="service-item">
+                <span>👕 Dry Cleaning - <strong class="price">₹200.00</strong></span>
+                <button class="add-btn" data-name="Dry Cleaning" data-price="200">Add item ⊕</button>
+            </div>
+            <div class="service-item">
+                <span>🧺 Wash & Fold - <strong class="price">₹100.00</strong></span>
+                <button class="add-btn" data-name="Wash & Fold" data-price="100">Add item ⊕</button>
+            </div>
+            <div class="service-item">
+                <span>👔 Ironing - <strong class="price">₹30.00</strong></span>
+                <button class="add-btn" data-name="Ironing" data-price="30">Add item ⊕</button>
+            </div>
+        </div>
+
+        <!-- Right: Cart & Form -->
+        <div class="cart-container">
+            <div class="cart-card">
+                <h3>Added Items</h3>
+                <div id="empty-cart-msg" class="empty-state">ⓘ No Items Added</div>
+                <ul id="cart-items"></ul>
+                <div class="total-row">
+                    <strong>Total Amount</strong>
+                    <strong id="total-price">₹ 0</strong>
+                </div>
+            </div>
+
+            <div class="booking-card">
+                <h3>Book Now</h3>
+                <form id="booking-form">
+                    <label>Full Name</label>
+                    <input type="text" id="user_name" name="user_name" required>
+                    
+                    <div class="form-row">
+                        <div>
+                            <label>Email ID</label>
+                            <input type="email" id="user_email" name="user_email" required>
+                        </div>
+                        <div>
+                            <label>Phone Number</label>
+                            <input type="tel" id="user_phone" name="user_phone" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="primary-btn full-width">Book now</button>
+                    <p id="success-msg" class="hidden success-text">Thank you For Booking the Service. We will get back to you soon!</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="feature">🏅<br><strong>Premium Services</strong><br><small>High quality care for your clothes.</small></div>
+        <div class="feature">🎧<br><strong>Quick Support</strong><br><small>We are here to help anytime.</small></div>
+        <div class="feature">🚚<br><strong>Hassle Free Delivery</strong><br><small>Right to your doorstep.</small></div>
+        <div class="feature">💰<br><strong>Affordable Prices</strong><br><small>Great service, great price.</small></div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="news-text">
+            <h2>Subscribe to our<br>newsletter.</h2>
+        </div>
+        <form class="news-form">
+            <input type="text" placeholder="Full name">
+            <input type="email" placeholder="Email">
+            <button class="subscribe-btn">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div>
+            <h2>Logo</h2>
+            <p><small>Lorem ipsum dolor sit amet.</small></p>
+        </div>
+        <div>
+            <strong>Important Links</strong>
+            <ul><li>About Us</li><li>Contact Us</li></ul>
+        </div>
+        <div>
+            <strong>Contact</strong>
+            <p>mail@site.com<br>+91 98765 43210</p>
+        </div>
+        <div>
+            <strong>Follow Us</strong>
+            <p>📸 🐦 📘</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

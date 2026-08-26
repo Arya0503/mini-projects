@@ -1,0 +1,62 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background-color: #f8f9fa; color: #333; }
+
+/* Reusable */
+.primary-btn { background: #00a8ff; color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+.full-width { width: 100%; margin-top: 15px; }
+.hidden { display: none; }
+.success-text { color: #28a745; text-align: center; margin-top: 10px; font-weight: bold; }
+
+/* Navbar */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: white; }
+.nav-links { display: flex; gap: 30px; list-style: none; }
+.nav-links a { text-decoration: none; color: #555; }
+.user-profile { background: #e6f7ff; color: #00a8ff; padding: 8px 20px; border-radius: 20px; }
+
+/* Hero */
+.hero-section { display: flex; align-items: center; padding: 60px 50px; background: white; }
+.hero-text { flex: 1; padding-right: 40px; }
+.hero-text h1 { font-size: 42px; margin-bottom: 20px; }
+.highlight { color: #00a8ff; }
+.hero-text p { color: #666; margin-bottom: 30px; line-height: 1.5; }
+.hero-image { flex: 1; text-align: right; }
+.hero-image img { max-width: 80%; }
+
+/* Achievements */
+.achievements { display: flex; align-items: center; justify-content: space-between; background: #00a8ff; color: white; padding: 30px 50px; }
+.stats { display: flex; gap: 50px; text-align: center; }
+.stats strong { font-size: 24px; }
+
+/* Booking Section */
+.booking-section { display: flex; gap: 40px; padding: 60px 50px; }
+.services-list { flex: 1.5; background: white; padding: 30px; border-radius: 10px; }
+.service-item { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 1px solid #eee; }
+.price { color: #00a8ff; }
+.add-btn { background: white; border: 1px solid #28a745; color: #28a745; padding: 8px 15px; border-radius: 20px; cursor: pointer; }
+.remove-btn { background: white; border: 1px solid #dc3545; color: #dc3545; padding: 8px 15px; border-radius: 20px; cursor: pointer; }
+
+/* Cart Layout */
+.cart-container { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+.cart-card, .booking-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.empty-state { text-align: center; color: #888; padding: 20px 0; }
+#cart-items { list-style: none; margin-bottom: 20px; }
+#cart-items li { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; }
+.total-row { display: flex; justify-content: space-between; border-top: 2px solid #eee; padding-top: 15px; font-size: 18px; }
+
+/* Form */
+.form-row { display: flex; gap: 15px; margin: 15px 0; }
+.form-row div { flex: 1; }
+input { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+
+/* Features */
+.features-section { display: flex; justify-content: space-around; padding: 50px; background: white; text-align: center; }
+
+/* Newsletter */
+.newsletter { display: flex; justify-content: space-between; align-items: center; background: #00a8ff; color: white; padding: 40px 50px; }
+.news-form { display: flex; gap: 10px; }
+.news-form input { border: none; padding: 15px; border-radius: 5px; }
+.subscribe-btn { background: white; color: #00a8ff; border: none; padding: 15px 25px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+
+/* Footer */
+.footer { display: flex; justify-content: space-between; padding: 50px; background: white; color: #555; }
+.footer ul { list-style: none; margin-top: 10px; }
