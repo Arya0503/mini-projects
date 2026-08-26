@@ -1,0 +1,77 @@
+/* Basic page reset and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #333;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #29b6f6; /* Light blue */
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* --- THE BUTTON STYLING & ANIMATION --- */
+
+.book-btn {
+    background-color: #29b6f6;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    /* The transition property tells the button to smoothly animate any changes over 0.3 seconds */
+    transition: transform 0.3s ease;
+}
+
+/* The :hover pseudo-class activates when the mouse is over the button */
+.book-btn:hover {
+    /* Scale(1.1) increases size by 10%. Rotate(-5deg) tilts it counter-clockwise. */
+    transform: scale(1.1) rotate(-5deg);
+}
