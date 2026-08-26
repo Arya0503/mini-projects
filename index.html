@@ -3,9 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Task</title>
+    <title>OmniFood Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+
+    <!-- Section 1: Header & Hero -->
+    <header class="header">
+        <div class="logo">OmniFood</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Food Delivery</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Our Cities</a></li>
+                <li><a href="#">Sign-up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text-box">
+            <h1>GOODBYE JUNK FOOD.<br>HELLO SUPER HEALTHY FOOD.</h1>
+            <button class="btn btn-full">I'm Hungry</button>
+            <button class="btn btn-ghost">Show me more</button>
+        </div>
+    </section>
+
+    <!-- Section 2: How It Works -->
+    <section class="how-it-works">
+        <h2>HOW IT WORKS &mdash; SIMPLE AS 1, 2, 3</h2>
+        <div class="steps-container">
+            <div class="steps-img-box">
+                <div class="mockup-placeholder">Phone Mockup</div>
+            </div>
+            <div class="steps-text-box">
+                <div class="step">
+                    <div>1</div>
+                    <p>Choose the plan that fits best for your need and sign-up today.</p>
+                </div>
+                <div class="step">
+                    <div>2</div>
+                    <p>Pay for the plan and download the app.</p>
+                </div>
+                <div class="step">
+                    <div>3</div>
+                    <p>You are done, start ordering!</p>
+                </div>
+                <div class="app-buttons">
+                    <button class="btn btn-full">App Store</button>
+                    <button class="btn btn-full">Google Play</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Our Cities -->
+    <section class="cities">
+        <h2>WE'RE CURRENTLY IN THESE CITIES</h2>
+        <div class="grid-4-col">
+            <div class="city-card">
+                <div class="img-placeholder">Lisbon Image</div>
+                <h3>Lisbon</h3>
+                <ul>
+                    <li>1600+ Happy Eaters</li>
+                    <li>60+ Chefs</li>
+                    <li>@omnifood_lx</li>
+                </ul>
+            </div>
+            <div class="city-card">
+                <div class="img-placeholder">London Image</div>
+                <h3>London</h3>
+                <ul>
+                    <li>3900+ Happy Eaters</li>
+                    <li>50+ Chefs</li>
+                    <li>@omnifood_london</li>
+                </ul>
+            </div>
+            <div class="city-card">
+                <div class="img-placeholder">Berlin Image</div>
+                <h3>Berlin</h3>
+                <ul>
+                    <li>2300+ Happy Eaters</li>
+                    <li>110+ Chefs</li>
+                    <li>@omnifood_berlin</li>
+                </ul>
+            </div>
+            <div class="city-card">
+                <div class="img-placeholder">San Fran Image</div>
+                <h3>San Francisco</h3>
+                <ul>
+                    <li>3700+ Happy Eaters</li>
+                    <li>160+ Chefs</li>
+                    <li>@omnifood_sf</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Testimonials -->
+    <section class="testimonials">
+        <h2>OUR CUSTOMERS CAN'T LIVE WITHOUT US</h2>
+        <div class="grid-3-col">
+            <div class="testimonial-card">
+                <blockquote>Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking.</blockquote>
+                <cite>Alberto Duncan</cite>
+            </div>
+            <div class="testimonial-card">
+                <blockquote>Inexpensive, healthy and great-tasting meals, delivered right to my home.</blockquote>
+                <cite>Joana Silva</cite>
+            </div>
+            <div class="testimonial-card">
+                <blockquote>I was looking for a quick and easy food delivery service in San Francisco.</blockquote>
+                <cite>Milton Chapman</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Pricing -->
+    <section class="pricing">
+        <h2>START EATING HEALTHY TODAY</h2>
+        <div class="grid-3-col">
+            <div class="pricing-card">
+                <h3>PREMIUM</h3>
+                <p class="price">$399 / month</p>
+                <ul>
+                    <li>✓ 1 meal everyday</li>
+                    <li>✓ Order 24/7</li>
+                    <li>✓ Free delivery</li>
+                </ul>
+                <button class="btn btn-full">Sign up</button>
+            </div>
+            <div class="pricing-card">
+                <h3>PRO</h3>
+                <p class="price">$199 / month</p>
+                <ul>
+                    <li>✓ 1 meal 10 days/month</li>
+                    <li>✓ Order 24/7</li>
+                    <li>✓ Free delivery</li>
+                </ul>
+                <button class="btn btn-ghost">Sign up</button>
+            </div>
+            <div class="pricing-card">
+                <h3>STARTER</h3>
+                <p class="price">$19 / meal</p>
+                <ul>
+                    <li>✓ 1 meal</li>
+                    <li>✓ Order 24/7</li>
+                    <li>✓ Free delivery</li>
+                </ul>
+                <button class="btn btn-ghost">Sign up</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">iOS App</a></li>
+                <li><a href="#">Android App</a></li>
+            </ul>
+        </div>
+        <div class="social-icons">
+            <span>[FB]</span> <span>[TW]</span> <span>[IG]</span>
+        </div>
+        <p class="copyright">Copyright © 2026 by Omnifood. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
