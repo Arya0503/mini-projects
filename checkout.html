@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thala 7 | Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">Thala <span class="blue-text">7.</span></span>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+        <div class="icons">
+            <span>🔍</span>
+            <span>🛒 2</span>
+            <span>👤</span>
+        </div>
+    </nav>
+
+    <!-- PAYMENT SECTION -->
+    <section class="page-section">
+        <div class="split-layout">
+            <div class="checkout-left">
+                <h3 class="grey-heading">Checkout</h3>
+                
+                <h4>Contact Details</h4>
+                <label>Email ID</label><br>
+                <input type="email" placeholder="John Doe" class="full-input">
+                
+                <h4 style="margin-top: 20px;">Payment</h4>
+                <div class="payment-tabs">
+                    <div class="tab active-tab">💳 Card</div>
+                    <div class="tab">₿ Crypto</div>
+                    <div class="tab">🏦 Bank</div>
+                </div>
+                
+                <label>Card Number</label><br>
+                <input type="text" placeholder="xxxx xxxx xxxx xxxx" class="full-input">
+                
+                <div class="card-row">
+                    <div>
+                        <label>Expiry</label><br>
+                        <input type="text" placeholder="MM/YY" class="half-input">
+                    </div>
+                    <div>
+                        <label>CVC</label><br>
+                        <input type="text" placeholder="---" class="half-input">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="checkout-right">
+                <h2 style="text-align: center;">Order Summary</h2>
+                <div class="totals-box box-shadow">
+                    <p>Sub Total: <span>₹2,668</span></p>
+                    <p>Taxes: <span>₹199</span></p>
+                    <p>Discount: <span>₹0</span></p>
+                    <h3>Total: <span>₹2,867</span></h3>
+                </div>
+                <button class="orange-btn full-width mt-20">Pay Now ₹2,867</button>
+                <p style="text-align: center; margin-top: 10px;">🔒 Secure | ⚡ Razorpay</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
