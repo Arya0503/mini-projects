@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laundry Services Web App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/2933/2933989.png"
+        alt="Laundry Logo"
+        class="logo"
+      />
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="user-btn">Username</div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-left">
+        <h1>
+          Revitalize Your<br />Clothes with Expert<br /><span
+            >Laundry Services!</span
+          >
+        </h1>
+        <p>
+          From premium dry cleaning to swift wash and fold, we deliver care and
+          convenience. Schedule a pickup and rediscover the freshness of your
+          clothes today!
+        </p>
+        <button id="scroll-to-book">
+          <i class="fa-solid fa-calendar-check"></i> Book a service today!
+        </button>
+      </div>
+      <div class="hero-right">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3003/3003984.png"
+          alt="Washing Machine"
+        />
+      </div>
+    </header>
+
+    <section class="achievements">
+      <div class="achieve-title">Our Achievements</div>
+      <div class="achieve-stats">
+        <div>
+          <h2>15+</h2>
+          <p>Laundry Services</p>
+        </div>
+        <div>
+          <h2>240+</h2>
+          <p>Happy Customers</p>
+        </div>
+        <div>
+          <h2>2+ Yrs</h2>
+          <p>Experience</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking-section" class="booking-section">
+      <div class="booking-left">
+        <h2>Our Services</h2>
+        <p class="subtitle">
+          Click On The Add to Cart Button To Add The Services To Your Cart
+        </p>
+        <div id="services-container"></div>
+        <div class="add-info">
+          <i class="fa-solid fa-circle-info"></i> Add the items to the cart and
+          book now
+        </div>
+      </div>
+
+      <div class="booking-right">
+        <div class="cart-container">
+          <h3>Added Items</h3>
+          <table id="cart-table">
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Service Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="cart-body"></tbody>
+          </table>
+          <div id="empty-cart-msg" class="empty-cart">
+            <i class="fa-solid fa-circle-info"></i>
+            <h4>No Items Added</h4>
+            <p>Add items to the cart from the services list</p>
+          </div>
+          <div class="total-section">
+            <span>Total Amount</span>
+            <span id="total-price">₹ 0.00</span>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <h3>Book Now</h3>
+          <form id="booking-form">
+            <div class="input-group full-width">
+              <label>Full Name</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="input-row">
+              <div class="input-group">
+                <label>Email ID</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="input-group">
+                <label>Phone Number</label>
+                <input type="text" id="phone" required />
+              </div>
+            </div>
+            <button type="submit" class="submit-btn">Book now</button>
+            <p id="form-message"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="qualities">
+      <div class="quality-card">
+        <i class="fa-solid fa-washing-machine"></i>
+        <h4>Premium Services</h4>
+        <p>
+          Elevate your wardrobe with our meticulous dry cleaning, ensuring
+          garments look and feel as good as new.
+        </p>
+      </div>
+      <div class="quality-card">
+        <i class="fa-solid fa-headset"></i>
+        <h4>Quick Support</h4>
+        <p>
+          We're committed to providing prompt solutions to ensure your
+          experience is smooth and worry-free.
+        </p>
+      </div>
+      <div class="quality-card">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h4>Hassle Free Delivery</h4>
+        <p>
+          Enjoy seamless service with our convenient pickup and delivery
+          options, tailored to your schedule.
+        </p>
+      </div>
+      <div class="quality-card">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        <h4>Affordable Prices</h4>
+        <p>
+          Experience exceptional care without breaking the bank - our affordable
+          prices make laundry day stress-free.
+        </p>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="news-text">
+        <h2>Subscribe to our<br />newsletter.</h2>
+      </div>
+      <div class="news-form">
+        <input type="text" placeholder="Full name" />
+        <input type="email" placeholder="Email" />
+        <button>Subscribe</button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-col">
+        <h2>Logo</h2>
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur. Sed At Congue.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Important Links</h4>
+        <ul>
+          <li>About us</li>
+          <li>Contact us</li>
+          <li>Privacy Policy</li>
+          <li>Terms of use</li>
+          <li>Refund Policy</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>mail@site.com</p>
+        <p>+91 91234 56780</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
